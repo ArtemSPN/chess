@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>chess</title>
+</head>
+<body>
+    <div class="container">
+        <div class="y">
+            <div class="numbers">8</div>
+            <div class="numbers">7</div>
+            <div class="numbers">6</div>
+            <div class="numbers">5</div>
+            <div class="numbers">4</div>
+            <div class="numbers">3</div>
+            <div class="numbers">2</div>
+            <div class="numbers">1</div>
+        </div>
+        <div class="board_wrap">
+            <div class="board"></div>
+            <div class="x">
+                <div class="letters">a</div>
+                <div class="letters">b</div>
+                <div class="letters">c</div>
+                <div class="letters">d</div>
+                <div class="letters">e</div>
+                <div class="letters">f</div>
+                <div class="letters">g</div>
+                <div class="letters">h</div>
+            </div>
+        </div>
+        <div class="statistic_area">
+            <div class="score">
+                <div class="text">White score: <div class="w_score">000</div></div>
+                <div class="score_area _w"></div>
+            </div>
+            <div class="time_block">
+                <div class="white_time">
+                    --- 
+                </div>
+                <div class="img_time">
+                    <img src="/clock.png" alt="" width="88%" draggable="false">
+                </div>
+                <div class="black_time">
+                    ---
+                </div>
+            </div>
+            <div class="score">
+                <div class="text">Black score: <div class="b_score">000</div></div>
+                <div class="score_area _b"></div>
+            </div>
+
+            <div class="team_time">
+                
+            </div>
+        </div>
+        <div class="settings">
+            <div class="set_item_1"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m19.4 44-1-6.3q-.95-.35-2-.95t-1.85-1.25l-5.9 2.7L4 30l5.4-3.95q-.1-.45-.125-1.025Q9.25 24.45 9.25 24q0-.45.025-1.025T9.4 21.95L4 18l4.65-8.2 5.9 2.7q.8-.65 1.85-1.25t2-.9l1-6.35h9.2l1 6.3q.95.35 2.025.925Q32.7 11.8 33.45 12.5l5.9-2.7L44 18l-5.4 3.85q.1.5.125 1.075.025.575.025 1.075t-.025 1.05q-.025.55-.125 1.05L44 30l-4.65 8.2-5.9-2.7q-.8.65-1.825 1.275-1.025.625-2.025.925l-1 6.3ZM24 30.5q2.7 0 4.6-1.9 1.9-1.9 1.9-4.6 0-2.7-1.9-4.6-1.9-1.9-4.6-1.9-2.7 0-4.6 1.9-1.9 1.9-1.9 4.6 0 2.7 1.9 4.6 1.9 1.9 4.6 1.9Zm0-3q-1.45 0-2.475-1.025Q20.5 25.45 20.5 24q0-1.45 1.025-2.475Q22.55 20.5 24 20.5q1.45 0 2.475 1.025Q27.5 22.55 27.5 24q0 1.45-1.025 2.475Q25.45 27.5 24 27.5Zm0-3.5Zm-2.2 17h4.4l.7-5.6q1.65-.4 3.125-1.25T32.7 32.1l5.3 2.3 2-3.6-4.7-3.45q.2-.85.325-1.675.125-.825.125-1.675 0-.85-.1-1.675-.1-.825-.35-1.675L40 17.2l-2-3.6-5.3 2.3q-1.15-1.3-2.6-2.175-1.45-.875-3.2-1.125L26.2 7h-4.4l-.7 5.6q-1.7.35-3.175 1.2-1.475.85-2.625 2.1L10 13.6l-2 3.6 4.7 3.45q-.2.85-.325 1.675-.125.825-.125 1.675 0 .85.125 1.675.125.825.325 1.675L8 30.8l2 3.6 5.3-2.3q1.2 1.2 2.675 2.05Q19.45 35 21.1 35.4Z"/></svg></div>
+            <div class="set_item_2"><svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M16 37.85v-28l22 14Zm3-14Zm0 8.55 13.45-8.55L19 15.3Z"/></svg></div>
+        </div>
+        </div>
+    </div>
+    <div class="bg"></div>
+
+    <div class="setting_popup">
+        <div class="set_title">Настройки внешнего вида</div>
+        <div class="set_subtitle">Цвет ячеек:</div>
+        <div class="change_color">
+            <div class="cc_item_1">
+                <div class="w1"></div>
+                <div class="b1"></div>
+            </div>
+            <div class="cc_item_2">
+                <div class="w2"></div>
+                <div class="b2"></div>
+            </div>
+            <div class="cc_item_3">
+                <div class="w3"></div>
+                <div class="b3"></div>
+            </div>
+        </div>
+        <div class="set_subtitle">Смена внешнего вида фигурок:</div>
+        <div class="change_figure">
+            <div class="cf_item_1">
+                <div class="white1">
+                    <img src="/white/pawn.png" class="img_figure_c" alt="">
+                </div>
+                <div class="black1">
+                    <img src="/black/pawn.png" class="img_figure_c" alt="">
+                </div>
+            </div>
+            <div class="cf_item_2">
+                <div class="white2">
+                    <img src="/white/pawn2.png" class="img_figure_c" alt="">
+                </div>
+                <div class="black2">
+                    <img src="/black/pawn2.png" class="img_figure_c" alt="">
+                </div>
+            </div>
+        </div>
+        <button class="close_btn">закрыть</button>
+    </div>
+
+    <div class="start_popup">
+        <div class="set_title">Настройки времени игры</div>
+        <div class="time_change">
+            <div class="time_item_1">60s (1min)</div>
+            <div class="time_item_2">180s (3min)</div>
+            <div class="time_item_3">300s (5min)</div>
+            <div class="time_item_4">600s (10min)</div>
+        </div>
+        <button class="start_btn">играть</button>
+    </div>
+
+    <div class="end_popup">
+        <div class="title_end">
+            Конец игры
+        </div>
+        <div class="score_block">
+            <div class="white_block">
+                <div class="w_scor">918</div>
+                <div class="w_team">White</div>
+            </div>
+            <div class="black_block">
+                <div class="b_scor">128</div>
+                <div class="b_team">Black</div>
+            </div>
+        </div>
+        <div class="win"></div>
+        <div class="btns">
+            <button class="end">завершить</button>
+            <button class="partiy">ход партии</button>
+        </div>
+        
+    </div>
+
+
+
+
+
+    <div class="change_figure1">
+        <div class="header_change_figure">
+            Смена фигуры
+        </div>
+        <div class="img_block">
+            <div class="horse"><img src="/black/horse.png" alt="" class="img_figure2"></div>
+            <div class="queen"><img src="/black/queen.png" alt="" class="img_figure2"></div>
+            <div class="rook"><img src="/black/rook.png" alt="" class="img_figure2"></div>
+            <div class="elephant"><img src="/black/elephant.png" alt="" class="img_figure2"></div>
+        </div>
+
+       <div class="txt_block">
+            <div class="horse_t">horse</div>
+            <div class="queen_t">queen</div>
+            <div class="rook_t">rook</div>
+            <div class="elephant_t">bishop</div>
+       </div>
+    </div>
+
+    <div class="change_figure2">
+        <div class="header_change_figure">
+            Смена фигуры
+        </div>
+        <div class="img_block">
+            <div class="horse"><img src="/white/horse.png" alt="" class="img_figure2"></div>
+            <div class="queen"><img src="/white/queen.png" alt="" class="img_figure2"></div>
+            <div class="rook"><img src="/white/rook.png" alt="" class="img_figure2"></div>
+            <div class="elephant"><img src="/white/elephant.png" alt="" class="img_figure2"></div>
+        </div>
+
+       <div class="txt_block">
+            <div class="horse_t">horse</div>
+            <div class="queen_t">queen</div>
+            <div class="rook_t">rook</div>
+            <div class="elephant_t">bishop</div>
+       </div>
+    </div>
+
+    <div class="historyGame">
+        <div class="HG_title">Ход игры</div>
+        <div class="HG_header">
+            <div class="HG_figure">фигура</div>
+            <div class="HG_position">позиция</div>
+            <div class="kill">выбывшая фигура</div>
+        </div>
+        <div class="HG_list">
+        
+        </div>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+</html>
